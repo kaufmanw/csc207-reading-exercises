@@ -4,6 +4,14 @@ public class Student {
   private int id;
   private int age;
 
+  /**
+	* Constructor for the Student type
+	*
+	* @param firstName the firstName of the student to be initialized
+	* @param lastName the last name of the student to be initialized 
+	* @param id the id of the student to be initialized
+	* @param age the age of the student to be initialized
+	*/
   public Student (String firstName, String lastName, int id, int age) {
 	this.firstName = firstName;
 	this.lastName = lastName;
@@ -62,7 +70,7 @@ public class Student {
 	* @param n the new value for the student's id. n must be a 6 digit number (leading zeros allowed), i.e. between 0 and 999999 
 	*/
   public void setId(int n) {
-	if (n < 999999 || n > 0) {
+	if (n < 999999 && n > 0) {
 	  this.id = n;
 	} else {
 	  throw new IllegalArgumentException();

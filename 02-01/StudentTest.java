@@ -13,5 +13,7 @@ public class StudentTest {
 	System.out.println(Willie.getLastName());
 	System.out.println(Willie.getId());
 	System.out.println(Willie.getAge());
+	Willie.setId(-7);
+	System.out.println(Willie.getId());
   }
 }
