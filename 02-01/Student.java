@@ -82,7 +82,7 @@ public class Student {
 	* @param n the new value for the student's age. n must be a positive number and cannot exceed 1000.
 	*/
   public void setAge(int n) {
-	if (n > 0 || n < 1000) {
+	if (n > 0 && n < 1000) {
 	  this.age = n;
 	} else {
 	  throw new IllegalArgumentException();
