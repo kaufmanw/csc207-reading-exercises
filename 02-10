@@ -1,0 +1,6 @@
+T(n) = k + T(n-2k)
+Since we know T'(0) = 0, T(n) = n/2 + T(n-2(n/2)), i.e. T(n) = n/2 + 0 = n/2.
+
+Note for T'(n) = 1 + T(n-l), we have that T(n) = n/l, i.e. we have that our big-O bound will always be O(n). So the constant k does not matter, we will get some scaled version of T(n) = n.
+
+
