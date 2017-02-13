@@ -1,0 +1,12 @@
+Stack          Heap
+----           -----
+
+--main
+c [] ----------> Counter
+				 value [1]
+
+--doWork
+c [] ----------> Counter
+				 value [0]
+
+The value of c's field is 1 at Point B. It was incremented once in doWork, then essentially forgotten about for the purposes of doWork.
