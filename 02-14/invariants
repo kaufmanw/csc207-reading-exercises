@@ -1,0 +1,1 @@
+A loop invariant would be that, for all j < i, ret >= arr[j]. As implemented, this is backwards; the loop invariant we are actually enforcing is that for all j < i, ret <= arr[i] (i.e. as written, this is a min function).
