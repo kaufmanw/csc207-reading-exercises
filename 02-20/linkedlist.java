@@ -1,5 +1,5 @@
 public class linkedlist {
-  node first;
+  private node first;
 
   public linkedlist() {
   first = null;

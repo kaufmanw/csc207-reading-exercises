@@ -1,6 +1,6 @@
 public class node {
-  int value;
-  node next;
+  public int value;
+  public node next;
 
   public node(int val, node nxt) {
 	this.value = val;
