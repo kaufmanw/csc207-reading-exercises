@@ -1,0 +1,5 @@
+The line i.foo passes type check, as i is type I and I has a "foo" method. It prints C.foo.
+
+The line i.bar does not pass type check, as i is of type I and I does not have a "bar" method.
+
+It seems like the second line is "safe" in that it's unambigious, but in the reading, it describes we should choose type I when we only want to use the methods of I. It seems like the programmer just shouldn't use type I when they want to use all the methods of the C type, rather than just those that are in the I interface.
